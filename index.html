@@ -8,28 +8,45 @@
     <title>French Translate</title>
     <style>
         textarea {
-        width: 90%;
-        display: block;
-        margin: 1rem;
-        border-width: .1rem;
-        border-color: black;
-    }
+            width: 80%;
+            display: block;
+            margin: 1rem;
+            border-width: .1rem;
+            height:10vh;
+            padding: 1rem;
+            border-color: black;
+            font-size: larger;
+        }
 
-    button {
-        padding: 0.5rem;
-        background: black;
-        border: none;
-        color: white;
-               
-    }
+        button {
+            padding: .5rem;
+            background: black;
+            border: none;
+            color: white;
+            cursor:pointer;
+       
+        }
+
+        #output{
+            border: 2px solid black;
+            height: 10vh;
+            width: 80%;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
     </style>
 
 </head>
 
 <body>
-    <textarea placeholder="Enter Your Text Here "></textarea>
+    <h1>French Translate</h1>
+    <textarea id="txt-input" placeholder="Enter Your Text Here "></textarea>
     <button id="btn-translate">Translate</button>
+    <div style="font-size:larger" >Output will come here</div>
+    <div id="output" > </div>
     <script src="app.js" type="text/javascript"> </script>
+    
 </body>
 
 </html>
